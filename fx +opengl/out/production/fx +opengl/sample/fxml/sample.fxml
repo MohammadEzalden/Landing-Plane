@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<GridPane hgap="20.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseMoved="#Initialize" prefHeight="500.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.Controller">
+  <columnConstraints>
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints maxHeight="173.0" minHeight="10.0" prefHeight="87.0" />
+    <RowConstraints maxHeight="274.0" minHeight="10.0" prefHeight="194.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="166.0" minHeight="3.0" prefHeight="57.0" />
+      <RowConstraints maxHeight="214.0" minHeight="10.0" prefHeight="162.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <JFXTextField fx:id="Wing_Area_id" labelFloat="true" onAction="#Wing_Area_F" promptText="Wing_Area" GridPane.rowIndex="3">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="Mass_id" labelFloat="true" onAction="#Mass_F" promptText="Mass" GridPane.columnIndex="1" GridPane.rowIndex="3">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="Acceleration_id" labelFloat="true" onAction="#Acceleration_F" promptText="Acceleration" GridPane.columnIndex="2" GridPane.rowIndex="3">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="Speed_id" labelFloat="true" onAction="#Speed_F" promptText="Speed" GridPane.columnIndex="3" GridPane.rowIndex="3">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="Weigh_id" labelFloat="true" onAction="#Weigh_F" promptText="Weigh" GridPane.columnIndex="3" GridPane.rowIndex="1">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="Thrust_id" labelFloat="true" onAction="#Thrust_F" promptText="Thrust" GridPane.rowIndex="1">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="Drag_id" labelFloat="true" onAction="#Drag_F" promptText="Drag" GridPane.columnIndex="2" GridPane.rowIndex="1">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="Lift_id" labelFloat="true" onAction="#Lift_F" promptText="Lift" GridPane.columnIndex="1" GridPane.rowIndex="1">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="Gravity_id" labelFloat="true" onAction="#Gravity_F" promptText="Gravity" GridPane.columnIndex="4" GridPane.rowIndex="1">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="Ailerons_id" labelFloat="true" onAction="#Ailerons_F" promptText="Ailerons" GridPane.columnIndex="4" GridPane.rowIndex="3">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="Rudder_id" labelFloat="true" onAction="#Rudder_F" promptText="Rudder" GridPane.columnIndex="5" GridPane.rowIndex="3">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="Elevatorsr_id" labelFloat="true" onAction="#Elevators_F" promptText="Elevators" GridPane.columnIndex="5" GridPane.rowIndex="1">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </JFXTextField>
+      <Label fx:id="Wing_Area_L" GridPane.rowIndex="2">
+         <font>
+            <Font size="19.0" />
+         </font></Label>
+      <Label fx:id="Thrust_L">
+         <font>
+            <Font size="19.0" />
+         </font></Label>
+      <Label fx:id="Lift_L" GridPane.columnIndex="1">
+         <font>
+            <Font size="19.0" />
+         </font></Label>
+      <Label fx:id="Drag_L" GridPane.columnIndex="2">
+         <font>
+            <Font size="19.0" />
+         </font></Label>
+      <Label fx:id="Weigh_L" GridPane.columnIndex="3">
+         <font>
+            <Font size="19.0" />
+         </font></Label>
+      <Label fx:id="Gravity_L" GridPane.columnIndex="4">
+         <font>
+            <Font size="19.0" />
+         </font></Label>
+      <Label fx:id="Mass_L" GridPane.columnIndex="1" GridPane.rowIndex="2">
+         <font>
+            <Font size="19.0" />
+         </font></Label>
+      <Label fx:id="Acceleration_L" GridPane.columnIndex="2" GridPane.rowIndex="2">
+         <font>
+            <Font size="19.0" />
+         </font></Label>
+      <Label fx:id="Speed_L" GridPane.columnIndex="3" GridPane.rowIndex="2">
+         <font>
+            <Font size="19.0" />
+         </font></Label>
+      <Label fx:id="Ailerons_L" GridPane.columnIndex="4" GridPane.rowIndex="2">
+         <font>
+            <Font size="19.0" />
+         </font></Label>
+      <Label fx:id="Elevators_L" GridPane.columnIndex="5">
+         <font>
+            <Font size="19.0" />
+         </font></Label>
+      <Label fx:id="Rudder_L" GridPane.columnIndex="5" GridPane.rowIndex="2">
+         <font>
+            <Font size="19.0" />
+         </font></Label>
+   </children>
+</GridPane>
